@@ -7,9 +7,7 @@ def print_fibonacci(length):
         fibonacci = [0]
     elif length >=2 :
         fibonacci = [0,1]
-        i=1
-        while i < length -1 :
+        for i in range(1,length-1) :
             fibonacci.append(fibonacci[i]+fibonacci[i-1])
-            i+=1
     print(fibonacci)
     
